@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <p>{{$route.params.username}}</p>
     <h1>{{msg}}</h1>
   </div>
 </template>

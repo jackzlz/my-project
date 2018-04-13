@@ -254,7 +254,7 @@ input:focus {
 	background: #ffffff;
 }
 .search input[type="submit"]{
-	background: url('/static/search.png') no-repeat 0px 1px;
+	background: url('../images/search.png') no-repeat 0px 1px;
 	border: none;
 	cursor: pointer;
 	width: 24px;

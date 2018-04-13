@@ -22,7 +22,27 @@
         <div class="col-md-9 w_content">
 
           <!-- grids_of_4 -->
-          <product v-for="(datas,index) in dataList" v-bind:datas="datas" :key="index"></product>
+
+          <div class="grids_of_4" v-for="(datas,index) in dataList" :key="index">
+            <div class="grid1_of_4" v-for="product in datas" :key="product.code">
+              <div class="content_box">
+                <a href="details.html">
+                  <div class="view view-fifth">
+                    <img :src="product.imgUrl" class="img-responsive" alt="" />
+                    <div class="mask">
+                      <div class="info">Quick View</div>
+                    </div>
+                  </div>
+                </a>
+                <h4>
+                  <a href="details.html"> {{product.name}}</a>
+                </h4>
+                <p>{{product.desc}}</p>
+                Rs. {{product.price}}
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
           <!-- end grids_of_4 -->
 
           <nav aria-label="Page navigation" style="text-align:right">
@@ -60,216 +80,7 @@
         <!-- end content -->
       </div>
     </div>
-    <!-- footer_top -->
-    <div class="footer_top">
-      <div class="container">
-        <div class="span_of_4">
-          <div class="span1_of_4">
-            <h4>Shop</h4>
-            <ul class="f_nav">
-              <li>
-                <a href="#">new arrivals</a>
-              </li>
-              <li>
-                <a href="#">men</a>
-              </li>
-              <li>
-                <a href="#">women</a>
-              </li>
-              <li>
-                <a href="#">accessories</a>
-              </li>
-              <li>
-                <a href="#">kids</a>
-              </li>
-              <li>
-                <a href="#">brands</a>
-              </li>
-              <li>
-                <a href="#">trends</a>
-              </li>
-              <li>
-                <a href="#">sale</a>
-              </li>
-              <li>
-                <a href="#">style videos</a>
-              </li>
-            </ul>
-          </div>
-          <div class="span1_of_4">
-            <h4>help</h4>
-            <ul class="f_nav">
-              <li>
-                <a href="#">frequently asked questions</a>
-              </li>
-              <li>
-                <a href="#">men</a>
-              </li>
-              <li>
-                <a href="#">women</a>
-              </li>
-              <li>
-                <a href="#">accessories</a>
-              </li>
-              <li>
-                <a href="#">kids</a>
-              </li>
-              <li>
-                <a href="#">brands</a>
-              </li>
-            </ul>
-            <h4 class="top">company name</h4>
-            <ul class="f_nav">
-              <li>
-                <a href="#">frequently asked questions</a>
-              </li>
-              <li>
-                <a href="#">men</a>
-              </li>
-              <li>
-                <a href="#">women</a>
-              </li>
-              <li>
-                <a href="#">accessories</a>
-              </li>
-              <li>
-                <a href="#">kids</a>
-              </li>
-              <li>
-                <a href="#">brands</a>
-              </li>
-            </ul>
-          </div>
-          <div class="span1_of_4">
-            <h4>account</h4>
-            <ul class="f_nav">
-              <li>
-                <a href="#">login</a>
-              </li>
-              <li>
-                <a href="#">create an account</a>
-              </li>
-              <li>
-                <a href="#">create wishlist</a>
-              </li>
-              <li>
-                <a href="#">my shopping bag</a>
-              </li>
-              <li>
-                <a href="#">brands</a>
-              </li>
-              <li>
-                <a href="#">create wishlist</a>
-              </li>
-            </ul>
-            <h4 class="top">style zone</h4>
-            <ul class="f_nav">
-              <li>
-                <a href="#">frequently asked questions</a>
-              </li>
-              <li>
-                <a href="#">men</a>
-              </li>
-              <li>
-                <a href="#">women</a>
-              </li>
-              <li>
-                <a href="#">accessories</a>
-              </li>
-              <li>
-                <a href="#">kids</a>
-              </li>
-              <li>
-                <a href="#">brands</a>
-              </li>
-            </ul>
-          </div>
-          <div class="span1_of_4">
-            <h4>popular</h4>
-            <ul class="f_nav">
-              <li>
-                <a href="#">new arrivals</a>
-              </li>
-              <li>
-                <a href="#">men</a>
-              </li>
-              <li>
-                <a href="#">women</a>
-              </li>
-              <li>
-                <a href="#">accessories</a>
-              </li>
-              <li>
-                <a href="#">kids</a>
-              </li>
-              <li>
-                <a href="#">brands</a>
-              </li>
-              <li>
-                <a href="#">trends</a>
-              </li>
-              <li>
-                <a href="#">sale</a>
-              </li>
-              <li>
-                <a href="#">style videos</a>
-              </li>
-              <li>
-                <a href="#">login</a>
-              </li>
-              <li>
-                <a href="#">brands</a>
-              </li>
-            </ul>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-        <!-- start span_of_2 -->
-        <div class="span_of_2">
-          <div class="span1_of_2">
-            <h5>need help?
-              <a href="#">contact us
-                <span> ></span>
-              </a>
-            </h5>
-            <p>(or) Call us: +91-70-45022088</p>
-          </div>
-          <div class="span1_of_2">
-            <h5>follow us </h5>
-            <div class="social-icons">
-              <ul>
-                <li>
-                  <a href="#" target="_blank"></a>
-                </li>
-                <li>
-                  <a href="#" target="_blank"></a>
-                </li>
-                <li>
-                  <a href="#" target="_blank"></a>
-                </li>
-                <li>
-                  <a href="#" target="_blank"></a>
-                </li>
-                <li>
-                  <a href="#" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-      </div>
-    </div>
-    <!-- footer -->
-    <div class="footer">
-      <div class="container">
-        <div class="copy">
-          <p class="link">&copy; All rights reserved | Design by&nbsp;
-            <a href="http://www.smallseashell.com">.小贝壳网站模板</a>
-          </p>
-        </div>
-      </div>
-    </div>
+
   </div>
 </template>
 <script>
@@ -283,7 +94,7 @@ export default {
     }
   },
   computed: {
-    dataList: function () {
+    dataList () {
       var len = this.productList.length
       var datalist = []
       let i = 0
@@ -302,70 +113,70 @@ export default {
         {
           code: 'w1',
           name: 'DUIS AUTEMCC',
-          imgUrl: 'images/w1.jpg',
+          imgUrl: '/static/w1.jpg',
           price: '499',
           desc: 'this is a desc text.'
         },
         {
           code: 'w2',
           name: 'DUIS AUTEMUU',
-          imgUrl: 'images/w2.jpg',
+          imgUrl: '/static/w2.jpg',
           price: '500',
           desc: 'this is a desc text.'
         },
         {
           code: 'w3',
           name: 'DUIS AUTEMXX',
-          imgUrl: 'images/w3.jpg',
+          imgUrl: '/static/w3.jpg',
           price: '600',
           desc: 'this is a desc text.'
         },
         {
           code: 'w4',
           name: 'DUIS AUTEMFF',
-          imgUrl: 'images/w4.jpg',
+          imgUrl: '/static/w4.jpg',
           price: '700',
           desc: 'this is a desc text.'
         },
         {
-          code: 'w4',
+          code: 'w5',
           name: 'DUIS AUTEMFF',
-          imgUrl: 'images/w4.jpg',
+          imgUrl: '/static/w4.jpg',
           price: '700',
           desc: 'this is a desc text.'
         },
         {
-          code: 'w4',
+          code: 'w6',
           name: 'DUIS AUTEMFF',
-          imgUrl: 'images/w4.jpg',
+          imgUrl: '/static/w4.jpg',
           price: '700',
           desc: 'this is a desc text.'
         },
         {
-          code: 'w4',
+          code: 'w7',
           name: 'DUIS AUTEMFF',
-          imgUrl: 'images/w4.jpg',
+          imgUrl: '/static/w4.jpg',
           price: '700',
           desc: 'this is a desc text.'
         },
         {
-          code: 'w4',
+          code: 'w8',
           name: 'DUIS AUTEMFF',
-          imgUrl: 'images/w4.jpg',
+          imgUrl: '/static/w4.jpg',
           price: '700',
           desc: 'this is a desc text.'
         },
         {
-          code: 'w4',
+          code: 'w9',
           name: 'DUIS AUTEMFF',
-          imgUrl: 'images/w4.jpg',
+          imgUrl: '/static/w4.jpg',
           price: '700',
           desc: 'this is a desc text.'
         },
         {
-          code: 'w4',
+          code: 'w10',
           name: 'DUIS AUTEMFF',
-          imgUrl: 'images/w4.jpg',
+          imgUrl: '/static/w4.jpg',
           price: '700',
           desc: 'this is a desc text.'
         }

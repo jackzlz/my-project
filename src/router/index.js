@@ -5,6 +5,7 @@ import Hi from '@/components/Hi'
 import Hi1 from '@/components/Hi1'
 import Hi2 from '@/components/Hi2'
 import Product from '@/components/Product'
+import Detail from '@/components/Detail'
 
 Vue.use(Router)
 
@@ -19,6 +20,11 @@ export default new Router({
       path: '/',
       name: 'Product',
       component: Product
+    },
+    {
+      path: '/detail',
+      name: 'Detail',
+      component: Detail
     },
     {
       path: '/hi',

@@ -8,7 +8,7 @@
 
       <div class="header">
         <div class="logo">
-          <a href="index.html"><img src="/static/logo.png" alt="" /> </a>
+          <a href="index.html"><img src="../assets/images/logo.png" alt="" /> </a>
         </div>
         <!-- start header_right -->
         <div class="header_right">
